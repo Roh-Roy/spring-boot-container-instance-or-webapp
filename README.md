@@ -26,7 +26,7 @@ GPG key generation one time :-
 
 **gpg --list-secret-keys**
 
-**pass init <generated gpg-id public key>** 
+**pass init (generated gpg-id public key)** 
  
 9- First go to container registry in azure portal and click "access keys" and Enable Admin user(bydefault false). Azure will provide a username and 2 passwords   
 
