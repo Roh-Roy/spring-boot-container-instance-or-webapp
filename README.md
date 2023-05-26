@@ -21,14 +21,12 @@ Prerequities - Install Azure Toolkit and Docker plugins for IDE. For me it's Int
 
 GPG key generation one time :- 
  
-**gpg --generate-key
-**
+**gpg --generate-key**
 
-**gpg --list-secret-keys
-**
 
-**pass init <generated gpg-id public key>
-** 
+**gpg --list-secret-keys**
+
+**pass init <generated gpg-id public key>** 
  
 9- First go to container registry in azure portal and click "access keys" and Enable Admin user(bydefault false). Azure will provide a username and 2 passwords   
 
