@@ -23,10 +23,13 @@ GPG key generation one time :-
  
 **gpg --generate-key
 **
+
 **gpg --list-secret-keys
 **
+
 **pass init <generated gpg-id public key>
-**  
+** 
+ 
 9- First go to container registry in azure portal and click "access keys" and Enable Admin user(bydefault false). Azure will provide a username and 2 passwords   
 
 10- Run below commands to push image to container registry 
@@ -34,8 +37,11 @@ GPG key generation one time :-
 mvn clean install to build the project and create a jar in target folder
   
 **az login** (Login and output should show your subcriptions)
+ 
 **az acr login --name myregistry.azurecr.io** (Output - Login Succeeded)
+ 
 **docker tag hello-world myregistry.azurecr.io/hello-world**  (No output no error)
+ 
 **docker push myregistry.azurecr.io/hello-world**    (some uploading will happen and end sha something will print)
 
   
